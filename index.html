@@ -4,96 +4,115 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Martín Fabra – IBM Maximo Consultant</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
+    * {
+      box-sizing: border-box;
+    }
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
-      background: #f4f4f4;
-      color: #333;
+      font-family: 'Inter', sans-serif;
+      background: #f8f9fa;
+      color: #212529;
+      line-height: 1.6;
     }
     header {
-      background-color: #003366;
-      color: white;
-      padding: 50px 20px;
+      background: linear-gradient(135deg, #003366, #00509e);
+      color: #fff;
       text-align: center;
+      padding: 80px 20px 40px;
     }
-    section {
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
       padding: 40px 20px;
-      max-width: 800px;
-      margin: auto;
-      background: white;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      margin-top: 30px;
-      border-radius: 10px;
     }
-    h1, h2 {
+    h2 {
       color: #003366;
-    }
-    ul {
-      list-style: none;
-      padding-left: 0;
-    }
-    ul li::before {
-      content: "\2022";
-      color: #003366;
-      font-weight: bold;
-      display: inline-block;
-      width: 1em;
-      margin-left: -1em;
-    }
-    .cta {
-      text-align: center;
       margin-top: 40px;
     }
+    ul {
+      padding-left: 1.2rem;
+    }
+    ul li {
+      margin-bottom: 8px;
+    }
+    .cta {
+      margin-top: 50px;
+      text-align: center;
+    }
     .cta a {
-      display: inline-block;
-      background-color: #003366;
+      background: #003366;
       color: white;
       text-decoration: none;
       padding: 12px 24px;
-      border-radius: 5px;
+      border-radius: 6px;
       margin: 10px;
+      display: inline-block;
+      transition: background 0.3s ease;
+    }
+    .cta a:hover {
+      background: #00509e;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #6c757d;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Remote IBM Maximo / MAS Consultant</h1>
-    <p>+24 years in EAM, ERP & ITSM – Available for freelance and remote contracts</p>
+    <p>+24 years of EAM, ERP & ITSM experience – Available for freelance and remote contracts</p>
   </header>
 
-  <section>
-    <h2>What I Do</h2>
-    <ul>
-      <li>Full-cycle IBM Maximo / MAS implementations</li>
-      <li>Remote support, audits, and optimizations</li>
-      <li>Training, data normalization, system integrations</li>
-    </ul>
+  <main class="container">
+    <section>
+      <h2>What I Do</h2>
+      <ul>
+        <li>Full-cycle IBM Maximo / MAS implementations</li>
+        <li>Remote support, audits, and optimizations</li>
+        <li>Training, data normalization, and system integration</li>
+      </ul>
 
-    <h2>Industry Experience</h2>
-    <p>Implemented Maximo and ERP solutions for clients in diverse industries:</p>
-    <ul>
-      <li><strong>Energy:</strong> AES Corporation, Termap</li>
-      <li><strong>Mining:</strong> Pan American Silver, Corporación Navíos</li>
-      <li><strong>Manufacturing:</strong> John Deere, Bunge, Alpargatas, New San, Greif</li>
-      <li><strong>Pharma:</strong> Ivax, Químicos Essiod</li>
-      <li><strong>F&B:</strong> Pepsi, Coca Cola, Las Marías</li>
-      <li><strong>Retail:</strong> Carrefour, Avon</li>
-      <li><strong>Telecom & IT:</strong> Arsat, Red Link</li>
-      <li><strong>Healthcare:</strong> Hospital Alemán</li>
-      <li><strong>Other:</strong> ADM, Causer, Indunor, Flamia, Sicamar Metales</li>
-    </ul>
+      <h2>Industry Experience</h2>
+      <p>I’ve delivered EAM and ERP solutions in diverse industries:</p>
+      <ul>
+        <li><strong>Energy:</strong> AES Corporation, Termap</li>
+        <li><strong>Mining:</strong> Pan American Silver, Corporación Navíos</li>
+        <li><strong>Manufacturing:</strong> John Deere, Bunge, Alpargatas, New San, Greif</li>
+        <li><strong>Pharma:</strong> Ivax, Químicos Essiod</li>
+        <li><strong>Food & Beverage:</strong> Pepsi, Coca Cola, Las Marías</li>
+        <li><strong>Retail:</strong> Carrefour, Avon</li>
+        <li><strong>Telecom & IT:</strong> Arsat, Red Link</li>
+        <li><strong>Healthcare:</strong> Hospital Alemán</li>
+        <li><strong>Others:</strong> ADM, Causer, Indunor, Flamia, Sicamar Metales</li>
+      </ul>
 
-    <h2>About Me</h2>
-    <p>I’m a senior EAM consultant with deep expertise in IBM Maximo / MAS. I’ve led and supported international projects with functional and technical roles. I work 100% remotely, communicate clearly, and understand the demands of asset-intensive industries.</p>
-    <p>English level: B1+ (conversational and improving). Spanish native speaker.</p>
+      <h2>About Me</h2>
+      <p>I’m a senior EAM consultant with deep expertise in IBM Maximo and MAS. I’ve worked with global and regional clients delivering functional and technical consulting. I operate 100% remotely and independently, with a focus on results and clarity.</p>
+      <p>English level: B1+ (conversational and improving). Spanish native speaker.</p>
 
-    <div class="cta">
-      <a href="mailto:mjfabra73@gmail.com">Email Me</a>
-      <a href="https://www.linkedin.com/in/martin-fabra" target="_blank">LinkedIn</a>
-      <a href="CV_Martin_Fabra_2025_EN.pdf" download>View CV</a>
-    </div>
-  </section>
+      <div class="cta">
+        <a href="mailto:mjfabra73@gmail.com">📧 Email Me</a>
+        <a href="https://www.linkedin.com/in/martin-fabra" target="_blank">🔗 LinkedIn</a>
+        <a href="CV_Martin_Fabra_2025_EN.pdf" download>📄 View CV</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Martín José Fabra. All rights reserved.
+  </footer>
 </body>
 </html>
