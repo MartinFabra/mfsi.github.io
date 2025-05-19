@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Martín Fabra: IBM Maximo/MAS & ERP Consultant with +24 years of experience. Offering remote services for implementations, optimization, support, and system integration.">
   <title>Martín Fabra – IBM Maximo / MAS & ERP Consultant</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     * {
@@ -14,13 +17,13 @@
       margin: 0;
       font-family: 'Inter', sans-serif;
       background: #f8f9fa;
-      color: #333; /* Darker text for better contrast */
-      line-height: 1.7; /* Slightly increased line height */
+      color: #333;
+      line-height: 1.7;
     }
     .language-switcher {
       text-align: right;
       padding: 10px 20px;
-      background-color: #e9ecef; /* Light background for switcher */
+      background-color: #e9ecef;
     }
     .language-switcher a {
       margin-left: 10px;
@@ -32,80 +35,152 @@
       background: linear-gradient(135deg, #003366, #00509e);
       color: #fff;
       text-align: center;
-      padding: 70px 20px 50px; /* Adjusted padding */
+      padding: 50px 20px 50px; /* Ajustado padding */
+    }
+    .header-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px; /* Espacio entre elementos del header */
+    }
+    /* === AVATAR STYLES === */
+    .avatar {
+        width: 120px; /* Tamaño del avatar */
+        height: 120px;
+        border-radius: 50%; /* Hace el avatar circular */
+        border: 3px solid #fff; /* Borde blanco opcional */
+        box-shadow: 0 0 10px rgba(0,0,0,0.3);
+        object-fit: cover; /* Asegura que la imagen cubra el espacio sin deformarse */
+    }
+    /* === LOGO STYLES (OPCIONAL) === */
+    .header-logo {
+        max-height: 50px; /* Ajusta según el tamaño de tu logo */
+        margin-bottom: 10px;
     }
     header h1 {
-      margin: 0 0 10px 0; /* Added bottom margin */
-      font-size: 2.8rem; /* Slightly larger */
+      margin: 10px 0 5px 0;
+      font-size: 2.6rem; /* Ajustado */
       font-weight: 700;
     }
-    header p {
-      font-size: 1.3rem; /* Slightly larger */
+    header .subtitle { /* Para el rol/título */
+      font-size: 1.5rem;
+      font-weight: 400;
       opacity: 0.95;
-      max-width: 700px; /* Limit width for readability */
-      margin: 0 auto; /* Center sub-headline */
+      margin-bottom: 10px;
+    }
+    header .impact-phrase { /* Para la frase de impacto */
+      font-size: 1.1rem;
+      opacity: 0.9;
+      max-width: 650px;
+      margin: 0 auto 20px auto; /* Espacio debajo de la frase */
+      font-style: italic;
     }
     .container {
-      max-width: 980px; /* Slightly wider container */
+      max-width: 980px;
       margin: 0 auto;
       padding: 30px 20px;
     }
     section {
-      margin-bottom: 40px; /* Space between sections */
-      padding: 25px;
-      background-color: #fff; /* White background for sections */
+      margin-bottom: 40px;
+      padding: 30px; /* Aumentado padding */
+      background-color: #fff;
       border-radius: 8px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.08); /* Subtle shadow */
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08); /* Sombra más pronunciada */
     }
     h2 {
       color: #003366;
-      margin-top: 0; /* Removed top margin as section has padding */
-      margin-bottom: 20px; /* Space below h2 */
+      margin-top: 0;
+      margin-bottom: 25px; /* Más espacio */
       font-size: 2rem;
-      border-bottom: 2px solid #00509e; /* Underline for titles */
+      border-bottom: 2px solid #00509e;
       padding-bottom: 10px;
+      font-weight: 700; /* Títulos más fuertes */
     }
     ul {
-      padding-left: 20px; /* Standard padding */
-      list-style-type: disc; /* Standard bullets */
+      padding-left: 20px;
+      list-style-type: disc;
     }
     ul li {
-      margin-bottom: 12px; /* More space between list items */
+      margin-bottom: 12px;
     }
     ul li strong {
-        color: #004a99; /* Slightly different color for strong text */
+        color: #004a99;
     }
-    .cta-container { /* Renamed from .cta for clarity */
+    /* === CLIENT LOGOS SECTION === */
+    .client-logos {
+        text-align: center;
+        padding: 20px 0;
+    }
+    .client-logos h3 {
+        color: #555;
+        margin-bottom: 20px;
+        font-size: 1.1rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+    .logos-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 30px; /* Espacio entre logos */
+    }
+    .client-logo-item { /* Para logos individuales si usas texto o imágenes pequeñas */
+        font-size: 1rem;
+        color: #444;
+        padding: 5px 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        background-color: #f9f9f9;
+    }
+    /* Si usas imágenes para los logos: */
+    /* .client-logo-item img {
+        max-height: 40px;
+        max-width: 100px;
+        filter: grayscale(100%); Opacidad o escala de grises para sutileza
+        opacity: 0.7;
+        transition: filter 0.3s ease, opacity 0.3s ease;
+    }
+    .client-logo-item img:hover {
+        filter: grayscale(0%);
+        opacity: 1;
+    } */
+
+    .cta-container {
       margin-top: 40px;
       text-align: center;
     }
-    .cta-button { /* Renamed from .cta a for clarity and specificity */
+    .cta-button {
       background: #003366;
       color: white;
       text-decoration: none;
-      padding: 14px 28px; /* Larger buttons */
-      border-radius: 6px;
+      padding: 15px 30px; /* Botones más grandes */
+      border-radius: 8px; /* Bordes más redondeados */
       margin: 10px;
       display: inline-block;
       transition: background 0.3s ease, transform 0.2s ease;
       font-weight: 600;
+      font-size: 1.1rem; /* Texto del botón más grande */
+      border: none; /* Quitar borde si no es necesario */
     }
     .cta-button:hover {
       background: #00509e;
-      transform: translateY(-2px); /* Slight lift on hover */
+      transform: translateY(-3px); /* Efecto hover más pronunciado */
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     }
-    .cta-button.secondary { /* For less prominent buttons like CV */
+    .cta-button.secondary {
         background: #6c757d;
     }
     .cta-button.secondary:hover {
         background: #5a6268;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.15);
     }
     footer {
       text-align: center;
-      padding: 30px 20px; /* More padding */
+      padding: 30px 20px;
       font-size: 0.9rem;
       color: #6c757d;
-      background-color: #e9ecef; /* Match language switcher background */
+      background-color: #e9ecef;
       margin-top: 30px;
     }
   </style>
@@ -114,11 +189,18 @@
 
   <div class="language-switcher">
     <span>English</span> | <a href="index_es.html">Español</a>
-    </div>
+  </div>
 
   <header>
-    <h1>Martín Fabra</h1>
-    <p>Remote IBM Maximo / MAS & ERP Consultant | +24 Years of EAM & ITSM Expertise</p>
+    <div class="header-content">
+      <img src="avatar.jpg" alt="Martín Fabra - IBM Maximo Consultant" class="avatar">
+
+      <h1>Martín José Fabra</h1>
+      <p class="subtitle">Senior EAM, IBM Maximo / MAS & ERP Consultant</p>
+      <p class="impact-phrase">
+        “Helping organizations optimize asset management through IBM Maximo / MAS with precision and reliability.”
+      </p>
+    </div>
   </header>
 
   <main class="container">
@@ -160,9 +242,27 @@
       </ul>
     </section>
 
-    <section id="experience">
-        <h2>Industry Experience Highlights</h2>
-        <p>I’ve delivered EAM and ERP solutions in diverse industries, working with renowned companies. Some key client experiences include:</p>
+    <section id="clients">
+        <h2>Trusted By / Worked With</h2>
+        <div class="client-logos">
+            <div class="logos-container">
+                <span class="client-logo-item">John Deere</span>
+                <span class="client-logo-item">AES Corporation</span>
+                <span class="client-logo-item">Coca Cola</span>
+                <span class="client-logo-item">Pan American Silver</span>
+                <span class="client-logo-item">Scania</span>
+                <span class="client-logo-item">Cargill</span>
+                <span class="client-logo-item">Bunge</span>
+                <span class="client-logo-item">Pepsi</span>
+                </div>
+             <p style="margin-top: 20px; font-size: 0.9em; color: #555;">
+                (Partial list of companies where I've contributed to projects, either directly or through consulting partners.)
+            </p>
+        </div>
+    </section>
+
+    <section id="experience-highlights"> <h2>Industry Experience Highlights</h2>
+        <p>I’ve delivered EAM and ERP solutions in diverse industries, working with renowned companies. Some key client project experiences include:</p>
         <ul>
           <li><strong>Energy:</strong> AES Corporation, Termap</li>
           <li><strong>Mining:</strong> Pan American Silver, Corporación Navíos</li>
@@ -184,7 +284,7 @@
   </main>
 
   <footer>
-    &copy; 2025 Martín José Fabra. All rights reserved. <br>
+    &copy; <script>document.write(new Date().getFullYear())</script> Martín José Fabra. All rights reserved. <br>
     Remote IBM Maximo / MAS & ERP Consulting Services.
   </footer>
 </body>
